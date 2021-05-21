@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ipl Match Simulator</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+
+  <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+</head>
+
+<style type="text/css">
+  html,body {
+  background: url(/static/css/ipl-bg-12.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+
+<body>
+  <br><br><br>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xl-6">
+
+
+    <!-- <h1 style="text-align:center;color:green;">
+      GeeksforGeeks
+    </h1> -->
+
+    <!-- Bootstrap table and table-striped classes -->
+    <table class="table table-striped">
+      <thead>
+        <tr >
+            <p style="text-align: center; font-weight: bolder; color: ">Innings 1</p>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <th scope="col">Overs</td>
+          <th scope="col">Balls</td>
+          <th scope="col">Runs</td>
+          <th scope="col">Total Runs</td>
+          <th scope="col">Wickets</td>
+          <th scope="col">Total Wickets</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        {%for i in ans1%}
+        <tr>
+          <td scope="row"><font color="#fff">{{i.Overs}}</td>
+          <td scope="row"><font color="#fff">{{i.Balls}}</td>
+          <td scope="row"><font color="#fff">{{i.Runs}}</td>
+          <td scope="row"><font color="#fff">{{i.Total_runs}}</td>
+          <td scope="row"><font color="#fff">{{i.Wickets}}</td>
+          <td scope="row"><font color="#fff">{{i.Total_wickets}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6 col-sm-12">
+
+    <!-- <h1 style="text-align:center;color:green;">
+      GeeksforGeeks
+    </h1> -->
+
+    <!-- Bootstrap table and table-striped classes -->
+    <table class="table table-striped">
+      <thead>
+        <tr >
+            <p style="text-align: center; font-weight: bolder;">Innings 2</p>
+        </tr>
+        <thead>
+          <tr>
+            <th scope="col">Overs</td>
+            <th scope="col">Balls</td>
+            <th scope="col">Runs</td>
+            <th scope="col">Total Runs</td>
+            <th scope="col">Wickets</td>
+            <th scope="col">Total Wickets</td>
+          </tr>
+      </thead>
+      </thead>
+      <tbody>
+        {%for i in ans2%}
+        <tr>
+          <td scope="row"><font color="#fff">{{i.Overs}}</td>
+          <td scope="row"><font color="#fff">{{i.Balls}}</td>
+          <td scope="row"><font color="#fff">{{i.Runs}}</td>
+          <td scope="row"><font color="#fff">{{i.Total_runs}}</td>
+          <td scope="row"><font color="#fff">{{i.Wickets}}</td>
+          <td scope="row"><font color="#fff">{{i.Total_wickets}}</td>
+        </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>

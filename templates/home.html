@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<title>IPL Match Simulator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href=('/static/css/favicon.ico') rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
+	<!-- <link rel="stylesheet" href="css/slicknav.min.css"/> -->
+	<link rel="stylesheet" href="/static/css/owl.carousel.min.css"/>
+	<!-- <link rel="stylesheet" href="css/magnific-popup.css"/> -->
+	<!-- <link rel="stylesheet" href="css/animate.css"/> -->
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="/static/css/style.css"/>
+	<style type="text/css">
+	navbar-expand-sm bg-dark{
+		background-color: #00011c;
+	}
+</style>
+
+
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+	
+				<!-- site logo -->
+				<a href="{%url 'home'%}" class="navbar-brand">
+					<img src="/static/css/ipl-logo1.png" alt="logo" style="width:50px;"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				</a>
+
+					<!-- Menu -->
+					<ul class="navbar-nav">
+    				<li class="nav-item">
+      					<a class="nav-link" href="{%url 'home'%}">Home</a>
+    				</li>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+   					<li class="nav-item">
+      					<a class="nav-link" href="{%url 'team'%}">Team</a>
+    				</li>
+ 					 </ul>
+			</nav>
+			
+	
+	<!-- Header section end -->
+
+
+	<!-- Hero section -->
+	<section class="hero-section overflow-hidden">
+		<div class="hero-slider owl-carousel">
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="/static/css/ipl-bg-1.jpg">
+				<div class="container">
+					<h3 style="color: white;">IPL Match Simulator</h3>
+					<p style="color: white;">It is a simulator the simulate the match between the two teams picked by the <br> user and show the score of both the team as an output.</p>
+					<!-- <a href="#" class="site-btn">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a> -->
+				</div>
+			</div>
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="/static/css/ipl-bg-2.jpg">
+				<div class="container">
+					<h3 style="color:#fae284;">Mumbai Indians</h3>
+					<p style="color:#fae284;">The Mumbai Indians are a franchise cricket team based in Mumbai, Maharashtra, that competes in the Indian Premier League. It is the most successful IPL team with five title wins.Founded in 2008,<br> the team is owned by India's biggest conglomerate, Reliance Industries, through its 100% <br> subsidiary IndiaWin Sports. Since its establishment, the team has played its home matches in the 33,108-capacity Wankhede Stadium in Mumbai.</p>
+					<!-- <a href="#" class="site-btn">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a> -->
+				</div>
+			</div>
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="/static/css/ipl-bg-3.jpg">
+				<div class="container">
+					<h3 style="color: #fc1100;">Chennai Super Kings</h3>
+					<p style="color: #fc1100;">The Chennai Super Kings (CSK) are a franchise cricket team based in Chennai, Tamil Nadu, <br> which plays in the Indian Premier League (IPL). Founded in 2008,<br> the team plays its home matches  at the M. A. Chidambaram Stadium in Chennai. It is the most consistent team of the IPL</p>
+					<!-- <a href="#" class="site-btn">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a> -->
+				</div>
+			</div>
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="/static/css/ipl-bg-4.jpg">
+				<div class="container">
+					<h3 style="color: #000300;">Royal Challengers Bangalore</h3>
+					<p style="color: #000300;">The Royal Challengers Bangalore (often abbreviated as RCB) are a franchise cricket team based in Bangalore, Karnataka, that plays in the Indian Premier League (IPL). The Royal Challengers <br> have never won the IPL but finished runners-up on three occasions between 2009 and 2016.<br> Their lack of success over the years despite the presence of various notable players has earned them the tag of "underachievers".</p>
+					<!-- <a href="#" class="site-btn">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a> -->
+				</div>
+			</div>
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="/static/css/ipl-bg-5.jpg">
+				<div class="container">
+					<h3 style="color:  #f0f5f0;">Kolkata Knight Riders</h3>
+					<p style="color:  #f0f5f0;">The Kolkata Knight Riders (KKR) are a franchise cricket team representing the city of Kolkata in the Indian Premier League. The franchise is owned by Bollywood actor Shah Rukh Khan, actress Juhi Chawla and her spouse Jay Mehta. The Knight Riders play at the iconic Eden Gardens stadium</p>
+					<!-- <a href="#" class="site-btn">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a> -->
+				</div>
+			</div>
+
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="/static/css/ipl-bg-7.jpeg">
+				<div class="container">
+					<h3 style="color: #000300;">Rajasthan Royal </h3>
+					<p style="color: #000300;">The Rajasthan Royals (often abbreviated as RR) are a franchise cricket team based in Jaipur, Rajasthan, that plays in the Indian Premier League (IPL).Founded in 2008 as one of the initial eight IPL franchises. The team won the inaugural edition of the IPL under the captaincy of Shane Warne, despite being written off as a title contender by the media and fans. The Royals were also the runners-up of the 2013 Champions League Twenty20 under Rahul Dravid's captaincy.</p>
+					<!-- <a href="#" class="site-btn">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a> -->
+				</div>
+			</div>
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="/static/css/ipl-bg-8.jpg">
+				<div class="container">
+					<h3 style="color:  #f0f5f0;">Delhi Capital</h3>
+					<p style="color:  #f0f5f0;">The Delhi Capitals are a franchise cricket team that represents the city of Delhi in the Indian Premier League (IPL). Founded in 2008 as the Delhi Daredevils. The Capitals broke their 12-year jinx by appearing in their first IPL final in 2020, and qualified for the IPL playoffs in 2019 for the first time in 7 years. The leading run-scorer for Delhi Capitals is Shreyas Iyer and the leading wicket-taker is Amit Mishra.</p>
+					<!-- <a href="#" class="site-btn">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a> -->
+				</div>
+			</div>
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="/static/css/ipl-bg-9.jpg">
+				<div class="container">
+					<h3 style="color: #000000;">Sunrisers Hyderabad</h2>
+					<p  style="color: #000000;">The Sunrisers Hyderabad are a franchise cricket team based in Hyderabad, Telangana, India, that plays in the Indian Premier League (IPL).The franchise is owned by Kalanithi Maran of the SUN Group and was founded in 2012 after the Hyderabad-based Deccan Chargers were terminated by the IPL.</p>
+					<!-- <a href="#" class="site-btn">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a> -->
+				</div>
+			</div>
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="/static/css/ipl-bg-6.jpg">
+				<div class="container">
+					<h3 style="color: #000000;">Kings XI Punjab</h3>
+					<p style="color: #000000;">The Punjab Kings are a franchise cricket team based in Mohali, Punjab, that plays in the Indian Premier League (IPL). Established in 2008 as the Kings XI Punjab, the franchise is jointly owned by <br>Mohit Burman, Ness Wadia, Preity Zinta and Karan Paul. The team plays its home matches at the PCA Stadium, Mohali. Since 2010, they also have been playing some of their home games at either Dharamsala or Indore. Apart from the 2014 season when they topped the league table and finished runners-up, the team has made only one other playoff appearance in 12 seasons.</p>
+					<!-- <a href="#" class="site-btn">Read More  <img src="img/icons/double-arrow.png" alt="#"/></a> -->
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+	<!-- Hero section end-->
+
+
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="/static/css/jquery-3.2.1.min.js"></script>
+	<script src="/static/css/bootstrap.min.js"></script>
+	<script src="/static/css/jquery.slicknav.min.js"></script>
+	<script src="/static/css/owl.carousel.min.js"></script>
+	<script src="/static/css/jquery.sticky-sidebar.min.js"></script>
+	<script src="/static/css/jquery.magnific-popup.min.js"></script>
+	<script src="/static/css/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+	<div>
+    <table border="1" cellpadding="5" cellspacing="5">
+      <td>Overs</td>
+      <td>Balls</td>
+      <td>Runs</td>
+      <td>Total Runs</td>
+      <td>Wickets</td>
+      <td>Total Wickets</td>
+      {%for i in ans1%}
+      <tr>
+        <td>{{i.Overs}}</td>
+        <td>{{i.Balls}}</td>
+        <td>{{i.Runs}}</td>
+        <td>{{i.Total_runs}}</td>
+        <td>{{i.Wickets}}</td>
+        <td>{{i.Total_wickets}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <table border="1" cellpadding="5" cellspacing="5">
+      <td>Overs</td>
+      <td>Balls</td>
+      <td>Runs</td>
+      <td>Total Runs</td>
+      <td>Wickets</td>
+      <td>Total Wickets</td>
+      {%for i in ans2%}
+      <tr>
+        <td>{{i.Overs}}</td>
+        <td>{{i.Balls}}</td>
+        <td>{{i.Runs}}</td>
+        <td>{{i.Total_runs}}</td>
+        <td>{{i.Wickets}}</td>
+        <td>{{i.Total_wickets}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+	</div>
+        <a href="{% url 'team' %}">Go back</a>
+    </body>
+</html>
